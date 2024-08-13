@@ -1,38 +1,76 @@
-.App {
+*{
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; 
+}
+.App{
+  max-width: 1030px;
+  min-height: 100vh;
+  margin: 30px auto;
+  border-radius: 20px;
+  padding: 30px;
+  background-color: #f7f7f7;
+}
+
+h2{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+form{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 15px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input{
+  border: 1px solid #f7f7f7;
+  padding: 10px;
+  font-size: 16px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+input:focus{
+  outline: none;
+}
+.form-control{
+  width: 300px;
+}
+.btn{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  cursor: pointer;
+}
+.btn:hover{
+  color: black;
+}
+.recipes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+.card{
+  width: 200px;
+  background-color: #fff;
+  margin: 10px;
+  border-radius: 5px;
+  padding-bottom:20px;
+}
+.card-img{
+  width: 100%;
+}
+.card-body{
+  padding: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
+.category{
+color: #a1a1a1;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+  background-color: #ffba5a;
+  color: inherit;
+  padding: 5px 10px;
+  text-decoration: none;
+border-radius: 5px;
 }
